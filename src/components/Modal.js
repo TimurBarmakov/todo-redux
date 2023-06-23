@@ -1,9 +1,8 @@
-import { useState,todos,addTask, toggleTask } from "react";
+import { useState } from "react";
 import React from "react";
 import styled from "styled-components";
 import { useDispatch,useSelector } from "react-redux";
 import { AddTodoAction } from "../redux/actions/TodoActions";
-import ListEntry from "./ListEntry";
 
 
 const StyledModal = styled.div `
@@ -48,9 +47,9 @@ const Modal = ({active, setActive,setTodoess,addTask,updateData}) => {
 
 
 
-    const handleChange = (e) => {
-        setUserInput(e.currentTarget.value)
-    }
+    // const handleChange = (e) => {
+    //     setUserInput(e.currentTarget.value)
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault()

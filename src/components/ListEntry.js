@@ -1,7 +1,6 @@
 import React from "react";
 // import Entry from "./Entry";
 import styled from "styled-components";
-import Modal from "./Modal";
 import Deletion from "./Deletion";
 import { useDispatch,useSelector } from "react-redux";
 import { useState } from "react";
@@ -19,7 +18,7 @@ const BtnDelete = styled.div `
 const ListEntry = ({ products,todos,active,setActive,onDeleted,handleToggle,removeTask, setDeletionActive,removeHandler}) => {
 
     // const todoes = useSelector(state => state.todos)
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const els = useSelector(state => state.Todo.todos)
     const [selectedEntry, setSelectedEntry] = useState()
     const elements = els.map((t) => {

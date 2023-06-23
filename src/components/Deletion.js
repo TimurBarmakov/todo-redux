@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
-import { RemoveTodoAction } from "../redux/actions/TodoActions";
 
 
 
@@ -38,7 +37,6 @@ justify-content:flex-end;
 
 
 const Deletion = ({todo,t, active, setActive,removeHandler}) => {
-    const dispatch = useDispatch()
     console.log(t)
     
 

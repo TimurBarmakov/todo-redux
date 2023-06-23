@@ -1,9 +1,8 @@
-import React, { Component,useState,setState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 import Modal from "./components/Modal";
 import { useDispatch,useSelector } from "react-redux";
-import Deletion from "./components/Deletion";
 import { RemoveTodoAction, getUsersFetch } from "./redux/actions/TodoActions";
 import ListEntry from "./components/ListEntry";
 import axios from "axios";
