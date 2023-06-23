@@ -2,7 +2,7 @@ import React from "react";
 // import Entry from "./Entry";
 import styled from "styled-components";
 import Deletion from "./Deletion";
-import { useDispatch,useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 
 const ListLi = styled.li `

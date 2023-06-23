@@ -37,13 +37,13 @@ align-items:center;
 justify-content:flex-end;
 `
 
-const Modal = ({active, setActive,setTodoess,addTask,updateData}) => {
-    const [userInput,setUserInput] = useState('')
+const Modal = ({active, setActive,addTask,updateData}) => {
+    // const [userInput,setUserInput] = useState('')
 
     const [todo,setTodo] = useState();
     const dispatch = useDispatch();
-    const Todo = useSelector((state) => state.Todo);
-    const { todos } = Todo;
+    // const Todo = useSelector((state) => state.Todo);
+    // const { todos } = Todo;
 
 
 
@@ -53,7 +53,7 @@ const Modal = ({active, setActive,setTodoess,addTask,updateData}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        addTask(userInput)
+        // addTask(userInput)
         dispatch(AddTodoAction(todo))
         setActive(false)
     }
