@@ -1,14 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import styled, {createGlobalStyle} from 'styled-components';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
+const Global = createGlobalStyle `
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+`
+const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
+    <Global/>
+    <QueryClientProvider client={queryClient}>
     <App />
-  </React.StrictMode>
+    </QueryClientProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
