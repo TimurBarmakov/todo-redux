@@ -1,5 +1,4 @@
 import React from "react";
-// import Entry from "./Entry";
 import styled from "styled-components";
 import Deletion from "./Deletion";
 import { useSelector } from "react-redux";
