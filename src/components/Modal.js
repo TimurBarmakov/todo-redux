@@ -2,7 +2,10 @@ import { useState } from "react";
 import React from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
+import PropTypes from 'prop-types'
 import { AddTodoAction } from "../redux/actions/TodoActions";
+import { storiesOf } from '@storybook/react';
+import { actions } from '@storybook/addon-actions';
 
 
 const StyledModal = styled.div `
@@ -90,5 +93,12 @@ const Modal = ({active, setActive,addTask,updateData}) => {
         
     );
 };
+
+Modal.propTypes = {
+    // active: PropTypes.bool,
+    handleSubmit: PropTypes.func,
+    setActive: PropTypes.func,
+    onClick: PropTypes.func
+}
 
 export default Modal;

@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
+    actions: { argTypesRegex: '^(on.*)' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -27,6 +27,7 @@ const preview = {
       },
     },
   },
+  actions: {argTypesRegex: "^on[A-Z].*"},
 
   decorators: [
     // Adds global styles and theme switching support.

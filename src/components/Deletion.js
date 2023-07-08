@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types"
 
 
 
@@ -53,6 +54,10 @@ const Deletion = ({todo,t, active, setActive,removeHandler}) => {
     );
     
 };
+
+Deletion.propTypes = {
+    // active: PropTypes.bool,
+}
 
 
 export default Deletion;
