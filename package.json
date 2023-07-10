@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sb": "storybook dev -p 6006",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "storybook build",
     "build-static-webapp":"expo build:web",
     "storybook": "storybook dev -p 6006"
   },
