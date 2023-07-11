@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "sb": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-static-webapp":"expo build:web",
+    "build-static-webapp": "expo build:web",
     "storybook": "storybook dev -p 6006"
   },
   "eslintConfig": {
@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.22.5",
     "@storybook/addon-essentials": "^7.0.22",
     "@storybook/addon-interactions": "^7.0.22",
     "@storybook/addon-links": "^7.0.22",
