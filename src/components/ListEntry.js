@@ -22,21 +22,6 @@ const ListEntry = ({ products,todos,active,setActive,onDeleted,handleToggle,remo
     const [selectedEntry, setSelectedEntry] = useState()
     const elements = els.map((t) => {
 
-        // document.addEventListener('click', event => {
-        //     event.preventDefault()
-        //     // const btnType = event.target.dataset.btn
-        //     const id = event.target.dataset.id
-        
-        //     // if (btnType === 'price') {
-        //     //     const fruit = els.find(t => t.id === id)
-                
-        //     //     console.log(id, fruit)
-        //     // }
-        //     const fruit = els.find(t => t.id === id) 
-        //     console.log(id, fruit)
-        // })
-        
-   
         return (
             <>
             <ListLi key={t.id} onClick={() => (setSelectedEntry(t))}>
@@ -47,7 +32,6 @@ const ListEntry = ({ products,todos,active,setActive,onDeleted,handleToggle,remo
             </ListLi>
                 
             </>
-            
             
         );
     });
